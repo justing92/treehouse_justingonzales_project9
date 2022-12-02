@@ -1,6 +1,6 @@
-const hover1 = document.getElementById("thumbnails").getElementsByTagName("img");
+const hover1 = document.querySelectorAll('#bw');
 const hover2 = document.getElementById("projects");
 
-hover1.addEventListener('mouseover', (event) => {
-    event.target.filter.grayscale = "80%";
-})
+hover1.forEach(addEventListener('mouseover', (event) => {
+    event.target.style.filter = "grayscale(80%)";
+}))
